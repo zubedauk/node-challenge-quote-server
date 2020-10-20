@@ -17,6 +17,15 @@ app.get("/", function (request, response) {
 });
 
 //START OF YOUR CODE...
+app.get("/quotes",function(req,response){
+  response.send(quotes);
+})
+app.get("/quotes/random",function(request,response){
+  response.send(pickFromArray(quotes))
+})
+app.get(`${process.env.PORT}/quotes/random/test`,function(request,response){
+  response.send("test")
+})
 
 //...END OF YOUR CODE
 
