@@ -10,7 +10,12 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "glitch": "^0.1.0",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0"
   },
   "engines": {
     "node": "8.x"
@@ -18,7 +23,6 @@
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
   },
- 
   "license": "MIT",
   "keywords": [
     "node",
